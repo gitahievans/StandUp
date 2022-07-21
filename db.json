@@ -8,17 +8,17 @@
     {
       "id": 2,
       "name": "Dallas",
-      "gender": "Male"
+      "gender": "Female"
     },
     {
       "id": 3,
       "name": "Rickey",
-      "gender": "Female"
+      "gender": "Male"
     },
     {
       "id": 4,
       "name": "Latia",
-      "gender": "Female"
+      "gender": "Male"
     },
     {
       "id": 5,
@@ -33,12 +33,12 @@
     {
       "id": 7,
       "name": "Erin",
-      "gender": "Female"
+      "gender": "Male"
     },
     {
       "id": 8,
       "name": "Killie",
-      "gender": "Male"
+      "gender": "Female"
     },
     {
       "id": 9,
@@ -49,6 +49,21 @@
       "id": 10,
       "name": "Devlen",
       "gender": "Female"
+    },
+    {
+      "name": "Tommy",
+      "gender": "Male",
+      "id": 11
+    },
+    {
+      "name": "Emily",
+      "gender": "Male",
+      "id": 12
+    },
+    {
+      "name": "Jeddy",
+      "gender": "Female",
+      "id": 13
     }
   ]
 }

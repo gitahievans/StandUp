@@ -10,6 +10,12 @@ function Person({ person, onDeletePerson, onUpdatePerson }) {
       .then(() => onDeletePerson(person));
   }
 
+  /*UPDATE(change part of our component((gender of our persons)) 
+  Basic steps
+  1.What event? = click
+  2.Make request to patch 
+  3.Update state*/
+
   function handleUpdatePerson(e) {
     fetch(`http://localhost:3000/persons/${person.id}`, {
       method: "PATCH",
@@ -25,20 +31,22 @@ function Person({ person, onDeletePerson, onUpdatePerson }) {
   }
 
   return (
-    <li>
-      <div>Name: {person.name}</div>
-      <div>
-        Gender: {person.gender}
-        <select onChange={handleUpdatePerson}>
-          <option value="Select">Select</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-        </select>
-      </div>
-      <button className="remove" onClick={handleDeleteClick}>
-        DELETE
-      </button>
-    </li>
+    <div className="container">
+      <ul>
+        <h3>Name: {person.name}</h3>
+        <p>
+          Gender: {person.gender}
+          <select className="select" onChange={handleUpdatePerson}>
+            <option value="Select">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </p>
+        <button className="remove" onClick={handleDeleteClick}>
+          DELETE
+        </button>
+      </ul>
+    </div>
   );
 }
 export default Person;

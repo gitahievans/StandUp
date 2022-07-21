@@ -5,7 +5,6 @@ import Person from "./Person";
 
 function PersonsList() {
   const [persons, setPersons] = useState([]);
-  // const [gender, setGender] = useState("Male");
 
   //READ(GET)
   useEffect(() => {

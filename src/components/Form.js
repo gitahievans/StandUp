@@ -23,28 +23,33 @@ function Form({ onAddPerson }) {
   }
 
   return (
-    <div>
+    <div className="form">
       <form onSubmit={handleSubmit}>
-        <label>
-          Name
+        <label className="label">Name</label>
+        <div>
           <input
+            className="input"
             type="text"
             placeholder="Enter name"
             value={name}
             name="name"
             onChange={(e) => setName(e.target.value)}
           />
-        </label>
-        <label>
+          <button>Submit</button>
+        </div>
+        <label className="label">Gender</label>
+        <div>
           <select
+            className="input"
             onChange={(e) => setGender(e.target.value)}
             name="gender"
             value={gender}
           >
-            <option value="Male">Male</option>
+            <option value="Select">Select</option>
             <option value="Female">Female</option>
+            <option value="Male">Male</option>
           </select>
-        </label>
+        </div>
       </form>
     </div>
   );
